@@ -1,0 +1,56 @@
+
+<html>
+     
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title> Formulario de Acceso </title>    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Videojuegos & Desarrollo">
+        <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+        <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="formato.css">
+        
+        <style type="text/css">
+            
+        </style>
+        
+        <script type="text/javascript">
+        
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Metodo Asimetrico
+                    </div> 
+                    <form name="formulario" method="post" action="cifrado.php" target="ventana">
+                        <div class="text">
+                            Ingresa el mensaje
+                        </div>
+                        <input type="text" placeholder="Mensaje a cifrar"name="nombre" value="">
+                        <input type="submit" name="boton1" value="GENERAR LLAVES">
+                        <input type="submit" name="boton2" value="CIFRAR MENSAJE">
+                        <input type="submit" name="boton3" value="DECIFRAR">
+                        
+                    </form>
+                </div>
+                <br>
+                <iframe id="iframe" name="ventana"  src="cifrado.php" height="400" width="400"></iframe> 
+            </div>
+        </div>
+           
+    </body>
+</html>
